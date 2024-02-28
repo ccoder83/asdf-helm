@@ -70,7 +70,8 @@ get_download_url() {
   local version="$1"
   local platform="$2"
   local filename="$(get_filename $version $platform)"
-  echo "https://get.helm.sh/${filename}"
+  // echo "https://get.helm.sh/${filename}"
+  echo "https://github.com/ccoder83/helm/blob/main/${filename}"
 }
 
 install_helm $ASDF_INSTALL_TYPE $ASDF_INSTALL_VERSION $ASDF_INSTALL_PATH
